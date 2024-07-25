@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Sesami code\Sesami _Dev\HibernateExample"/>
+			<item value="D:\Sesami code\Sesami _Dev\HibernateExample\HibernateExample"/>
+			<item value="C:\Users\HP\Downloads\SpringMVC_Hibernate_Setup_May21\SpringMVC_Hibernate_Setup"/>
+			<item value="C:\Users\HP\Downloads\SpringHibernateExample_May21\SpringHibernateExample"/>
+			<item value="C:\Users\HP\Downloads\SpringExample_May21\SpringExample"/>
+			<item value="C:\Users\HP\Desktop\HibernateExample\HibernateExample"/>
+			<item value="C:\Users\HP\Downloads\Maven3-Hibernate3.6-Oracle11-Example-May21\HibernateExample"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="userLogin" template="/WEB-INF/jsp/user/guestLayout.jsp">
+		<put-attribute name="title" value="E-Auction India - Bank Home Properties Auctions Hyderabad, Bangalore" />
+		<put-attribute name="description" value="E-Auction India – Online Bank Auctions Hyderabad, Bangalore. Check out list of all banks property auctions like home, flats and Houses" />
+		<put-attribute name="keywords" value="E Auctions, Auctions India, Bank Auctions, Bank Auction Properties, Bank Property Auction, Bank Auction Flats, Bank Auction Homes, Bank Auction Properties Hyderabad, Bank Auction Properties in Bangalore" />
+		
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/home.jsp" />
+		<put-attribute name="login" value="/WEB-INF/jsp/user/userLogin.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	<definition name="live-auctions" extends="userLogin">
+	    <put-attribute name="title" value="E-Auctions -List of All Online Users Live Bank Auctions" />
+	    <put-attribute name="description" value="E-Auction India – Online Bank Auctions Hyderabad, Bangalore. Check out list of all banks property auctions like home, flats and Houses" />
+	    <put-attribute name="keywords" value="E-auctions India, User Live Auctions, Live Bank Auctions, Bank Properties Live Auctions, Bank Auction Homes, Bank Auctions Flats, Bank Property Auctions, Online Live Property Auctions" />
+		
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/liveAuctions.jsp" />
+	</definition>
+	
+	<definition name="future-auctions" extends="userLogin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/futureAuctions.jsp" />
+	</definition>
+	
+	
+	<definition name="hyd-auctions" extends="userLogin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/hydAuctions.jsp" />
+	</definition>
+	
+	<definition name="bang-auctions" extends="userLogin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/bangAuctions.jsp" />
+	</definition>
+	
+	<definition name="mumbai-auctions" extends="userLogin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/mumbaiAuctions.jsp" />
+	</definition>
+	
+	<definition name="pune-auctions" extends="userLogin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/puneAuctions.jsp" />
+	</definition>
+	
+	<definition name="vijayawada-auctions" extends="userLogin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/vijayawadaAuctions.jsp" />
+	</definition>
+	<definition name="registration" extends="userLogin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/customer/editCustomer.jsp" />
+		<put-attribute name="login" value="" />
+	</definition>
+	<definition name="admin" template="/WEB-INF/jsp/layout.jsp">
+	 	<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />  
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	<definition name="adminLogin" template="/WEB-INF/jsp/admin.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/adminLogin.jsp" />
+	</definition>
+	
+	<definition name="OTPForm" template="/WEB-INF/jsp/otpCode.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/otpCode.jsp" />
+	</definition>
+	
+	
+	<definition name="UserOTPForm" template="/WEB-INF/jsp/otpFormTemplate.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/otpCodeforUsers.jsp" />
+	</definition>
+	
+	<!--<definition name="userLogin" template="/WEB-INF/jsp/user/loginLayout.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userLoginLayout.jsp" />
+	</definition>
+	
+	--><definition name="adminHome" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/home.jsp" />
+	</definition>
+	
+	<definition name="homePage" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/home.jsp" />
+	</definition>
+	
+	
+	<definition name="liveAuctions" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/liveAuctions.jsp" />
+	</definition>   
+	
+	<definition name="futureAuctions" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/futureAuctions.jsp" />
+	</definition>
+	
+	<definition name="closedAuctions" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/closedAuctions.jsp" />
+	</definition>
+	
+	<definition name="cancelAuctions" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/cancelAuctions.jsp" />
+	</definition>
+	<definition name="viewEnquiries" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/enquiries/viewEnquiries.jsp" />
+	</definition>
+	<definition name="addEnquiry" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/enquiries/editEnquiry.jsp" />
+	</definition>
+
+	<definition name="viewRoles" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/roles/viewRoles.jsp" />
+	</definition>
+	<definition name="addRole" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/roles/editRole.jsp" />
+	</definition>
+	<definition name="viewPermissions" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/permissions/viewPermissions.jsp" />
+	</definition>
+	<definition name="addPermission" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/permissions/editPermission.jsp" />
+	</definition>
+	<definition name="viewUsers" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/users/viewUsers.jsp" />
+	</definition>
+	<definition name="addUser" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/users/editUser.jsp" />
+	</definition>
+	<definition name="myProfile" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/users/myProfile.jsp" />
+	</definition>
+	
+	<definition name="userProfile" template="/WEB-INF/jsp/user/userTemplate.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userProfile.jsp" />
+	</definition>
+	<definition name="userProfileSave" template="/WEB-INF/jsp/user/userTemplate.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userProfile.jsp" />
+	</definition>
+	 <definition name="viewBankers" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/bankers/viewBankers.jsp" />
+	</definition>
+	<definition name="addBankers" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/bankers/editBankers.jsp" />
+	</definition>
+    	
+    <definition name="viewCustomer" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/customer/viewCustomer.jsp" />
+	</definition>
+	<definition name="viewCustomerDetails" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/customer/viewCustomerDetails.jsp" />
+	</definition>
+	<definition name="addCustomer" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/customer/editCustomer.jsp" />
+	</definition> 	
+    	
+    <definition name="attendanceSheet" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/customer/attendenceSheet.jsp" />
+	</definition> 
+		
+	<definition name="viewExecutive" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/executives/viewExecutives.jsp" />
+	</definition>
+	<definition name="addExecutive" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/executives/editExecutives.jsp" />
+	</definition>
+    
+     <definition name="viewProject" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/bankProject/viewBankProject.jsp" />
+	</definition>
+	<definition name="addProject" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/bankProject/editBankProject.jsp" />
+	</definition>
+	
+	<definition name="viewSmsTemplate" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/smsTemplate/viewSmsTemplate.jsp" />
+	</definition>
+	<definition name="addSmsTemplate" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/smsTemplate/editSmsTemplate.jsp" />
+	</definition>
+	
+	
+	<definition name="viewSmsSettings" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/smsSettings/viewSmsSettings.jsp" />
+	</definition>
+	<definition name="addSmsSettings" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/smsSettings/editSmsSettings.jsp" />
+	</definition>
+	
+	<definition name="viewSms" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/sms/viewSms.jsp" />
+	</definition>
+	
+	
+	<definition name="contactus" extends="admin">
+		<put-attribute name="body" value="/WEB-INF/jsp/common/contactUs.jsp" />
+	</definition>
+	
+	<!--<definition name="viewRunningAuction" template="/WEB-INF/jsp/admin.jsp">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/viewRunningAuction.jsp" />
+	</definition>
+	
+	
+	--><definition name="viewRunningAuction" template="/WEB-INF/jsp/admin.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/aoRunningAuction.jsp" />
+	</definition>  
+	
+	<definition name="userHome" template="/WEB-INF/jsp/admin.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userHomeLayOut.jsp" />
+	</definition>
+	<!-- <definition name="userOtp" template="/WEB-INF/jsp/admin.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userHomeLayOut.jsp" />
+	</definition> -->
+	
+	
+	<!--<definition name="userLiveAuctions" template="/WEB-INF/jsp/user/userTemplate.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/liveAuctions.jsp" />
+	</definition>
+	
+	<definition name="userFutureAuctions" template="/WEB-INF/jsp/user/userTemplate.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/futureAuctions.jsp" />
+	</definition>
+	
+	-->
+	<definition name="viewProjectDetails" template="/WEB-INF/jsp/user/userTemplate.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/bankProject/viewBankProjectDetails.jsp" />
+	</definition>
+	<definition name="viewPrintAuction" template="/WEB-INF/jsp/admin/auctions/printAuctionDetails.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/printAuctionDetails.jsp" />
+	</definition>
+	<definition name="printAttendanceSheet" template="/WEB-INF/jsp/admin/customer/printAttendanceSheet.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/customer/printAttendanceSheet.jsp" />
+	</definition>
+	<definition name="faq" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	   <put-attribute name="title" value="E-Auction India - FAQ" /> 
+	   <put-attribute name="description" value="Faq E-Auctions India - Get more details about auction listings and for inquiries related to live or future auctions" />
+	   <put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+	   <put-attribute name="body" value="/WEB-INF/jsp/faq.jsp" />
+	</definition>
+	
+	<definition name="contact-us" template="/WEB-INF/jsp/user/userTemplate.jsp">
+		<put-attribute name="title" value="E-Auction India -Contact Us" />
+	    <put-attribute name="description" value="Contact E-Auctions India - Get more details about auction listings and for inquiries related to live or future auctions" />
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userContactUs.jsp" />
+	</definition>
+	
+	<definition name="saved" template="/WEB-INF/jsp/user/guestLayout.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/home.jsp" />
+		<!-- <put-attribute name="body" value="/WEB-INF/saved.jsp" /> -->
+	</definition>
+	<!-- 
+	<definition name="viewRunningAuction" template="/WEB-INF/jsp/admin/auctions/auctionTemplate.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="header" value="/WEB-INF/jsp/admin/auctions/auctionHeader.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/auctions/auctionMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/aoRunningAuction.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/admin/auctions/auctionFooter.jsp" />
+	</definition>
+	 -->
+</tiles-definitions>

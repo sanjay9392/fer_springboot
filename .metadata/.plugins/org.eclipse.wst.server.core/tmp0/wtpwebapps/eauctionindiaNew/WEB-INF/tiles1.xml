@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    
+    <definition name="userLogin" template="/WEB-INF/jsp/user/guestLayout.jsp">
+		<put-attribute name="title" value="Welcome to EAuction" />
+		<put-attribute name="header" value="/WEB-INF/jsp/user/userHeaderMain.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/homeEx.jsp" />
+		<put-attribute name="login" value="/WEB-INF/jsp/user/userLogin.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="faq" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/faq.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="services" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/services.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/leftNavigation.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="aboutUs" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/aboutUs.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	<definition name="addCustomer1"  template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/customer/editCustomer.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	<definition name="auctionList" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/auctionList.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="complaints" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/complaints.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="auction" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/auction.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	 <definition name="viewProjects" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	     <put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/viewAuctions.jsp" />
+		
+		<put-attribute name="login" value="" />
+	</definition>
+	
+	<definition name="userContactus" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userContactUs.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition> 
+	
+    <definition name="forUserLogin" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user/foruserLogin.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>	
+	
+	
+	<definition name="feedback" template="/WEB-INF/jsp/user/userTemplate.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/user/userHeader.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user/feedback.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+		
+	
+	<!-- 
+	<definition name="viewRunningAuction" template="/WEB-INF/jsp/admin/auctions/auctionTemplate.jsp">
+		<put-attribute name="title" value="EAuction" />
+		<put-attribute name="header" value="/WEB-INF/jsp/admin/auctions/auctionHeader.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/auctions/auctionMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/auctions/aoRunningAuction.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/admin/auctions/auctionFooter.jsp" />
+	</definition>
+	 -->
+</tiles-definitions>

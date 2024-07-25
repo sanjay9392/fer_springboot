@@ -1,0 +1,1344 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	color: #777;
+}
+.clear {
+	clear: both;
+}
+a {
+	text-decoration:none;
+}
+body {
+	background: #e6e6e6; /*url(../images/bg1.gif); /* #4d4d4d;*/
+}
+#wrapper {
+	margin: 0px auto;
+	width: 1050px;
+}
+ #header {
+/* 	width: 100%;
+	height: 85px; */
+	 /* url(../images/bgx.jpg) repeat-x */;
+	/* margin-top: 20px;
+	-moz-border-radius: 10px; */
+}
+ 
+#userType{
+	text-align:left;
+	height: 24px;
+}
+ #header-top {
+	/* padding: 20px 10px 0px; */
+	font-size: 16px;
+	font-weight: bold;
+	height: 50px;
+	text-align: left;
+	/* color: blue; #EF6202;
+	background-color:red; */ 
+} 
+#admin-content {
+	background: #fff; /*#efefef;*/
+}
+#top-navigation{
+	float: right;
+	padding: 0px;
+	background: #006672; /*#B11015; /*#ffc003;*/
+	height: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+/* ul.top-menu, ul.menu {
+	list-style-type: none;
+}
+ul.top-menu li, ul.menu li {
+	float: left;
+	padding: 0px 10px;
+}
+ul.top-menu li a, ul.menu li a {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+ul.top-menu li a:hover, ul.menu li a:hover {
+	color: #ffff00;
+}
+ */
+ 
+ /* new css
+ ul.menu
+{
+    width:100%;
+    margin: 0 auto; If the menu has a width, this "margin:0 auto;" makes the menu center-aligned. You can remove it for left-alignment, or change it to "margin-left:auto; margin-right:0;" for right-alignment.
+    text-align:center;
+    list-style:none;
+    padding:0;
+    font-size:0;
+    position:relative;
+    min-height:62px;
+}
+        
+ul.menu li
+{
+    display:inline;
+    list-style:none; padding:0;
+    margin-top:0;margin-bottom:0;
+    margin-left:6px;margin-right:6px;
+}
+        
+Main menu links
+ul.menu li a
+{
+    letter-spacing:normal;
+    color:#FFFFFF;
+    padding:0 14px;
+    line-height:26px;
+    font-size:11px;
+    font-weight:bold;
+    font-family:Arial;
+    text-decoration:none;
+    display:inline-block; 
+    outline:0;
+    
+    border:1px solid #C2D5EF;
+    border-bottom:none;
+    background:#FF6600;
+    position:relative;
+    top:1px;
+    z-index:4;  
+    border-radius:4px 4px 0 0;
+}
+If you've set the menu's javascript file with { preview:false }, you may want to specify the following hovered tab styles     
+ul#tabmenu li a:hover {
+    color: red;
+    background: black;
+}
+
+ul.menu li a:hover
+{
+    padding-bottom:1px;
+    background: #FF6600;
+    color:#FF6600;
+}
+ */
+/* You can set active tab's style when hovered
+ul#tabmenu li.active a:hover {
+    color:green;
+}*/
+/*  #navigation {
+	float: left;
+	padding: 0px;
+	background: #EF6202; url(./images/navbg1.jpg); /*#B11015; /*#ffc003;
+	height: 20px;
+	border-radius: 0px 5px 0px 0px;
+	-moz-border-radius: 0px 5px 0px 0px;
+}
+*/
+/* #citiesNavigation {
+	 float: left; 
+	width:100%;
+	padding:0px;
+	background: #0066cc; url(./images/navbg1.jpg); #B11015; /*#ffc003;
+	height: 30px;
+	border-radius: 0px 5px 0px 0px;
+	-moz-border-radius: 0px 5px 0px 0px;
+} */
+#cityNavigation {
+	padding-top: 8px;
+	/*float: left;
+	width:100%;
+	padding: 0px;
+	background: #EF6202; url(./images/navbg1.jpg); #B11015; #ffc003;
+	height: 30px;
+	border-radius: 0px 5px 0px 0px;
+	-moz-border-radius: 0px 5px 0px 0px;*/
+} 
+/* ul.menu {
+	list-style-type: none;
+}
+ul.menu li {
+	float: left;
+	padding: 0px 10px;
+	margin: 0px;
+}
+ul.menu li a {
+	display: block;
+	float: left;
+	padding: 2px 10px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+ul.menu li a:hover {
+	background: none; #C0BCFF;
+} */
+/* #left-menu {
+	background: #fff;
+	padding: 10px;
+	float: left;
+	width: 120px;
+	min-height: 400px;
+}
+html>body #left-menu { min-height: 380px; } */
+/* #left-menu a {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	color: #000;
+	border-bottom: 1px solid #777;
+}
+#left-menu a:hover {
+	color: #ff0000;
+} */
+#main-content {
+	float: left;
+	width: 840px;
+	background: #fff; /*#efefef; /*#999;*/
+	padding: 10px;
+	min-height: 400px;
+}
+html>body #main-content { min-height: 380px; }
+#main-content table td {
+	/*min-height: 400px;*/
+	color: #777; /*000; /*#fff;*/
+	font-size: 12px;
+}
+#main-content table th {
+	height: 30px;
+	color: #000; /*#ffc003;*/
+	font-size: 14px;
+}
+#main-content table td select {
+	width: 250px;
+	height: 30px;
+}
+#main-content table td a {
+	color: #0000ff; /*#fff;*/
+}
+#main-content table td div table {
+	background: #fff;
+}
+#content-left, #content-right {
+	float: left;
+	width: 500px;
+	min-height: 300px;
+}
+#content-right {
+	background: #e6e6e6; /*#908f8d;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	-moz-border-radius: 10px;
+	font-size:12px;
+    margin-right: 0px;
+    min-height: 200px;
+    padding: 52px 80px 10px;
+    width: 300px;
+	line-height:30px;
+}
+#content-right h2 {
+	font-size: 14px;
+	color: #B11015;
+}
+#footer-top {
+	width: 100%;
+	height: 150px;
+	background: #fff; /*#ffcccc;*/
+}
+#footer-bottom {
+	width: 100%;
+	height: 40px;
+	background: #BEEBF0; /*#B11015;*/
+}
+#footer {
+	margin-bottom: 50px;
+}
+h1 {
+	font-size:30px;
+}
+li.add-link {
+	display:block;	
+}
+li.add-link  a{
+	padding-left:20px;
+	display:inline-block;
+	text-decoration:none;
+
+}
+
+.link {
+	font-size:12px;
+}
+/*ul.menu{
+	padding-left: 0px;
+	height: 35px;
+	width: 100%;
+	border: 1px solid #000;
+	margin: 0px;
+}*/
+li.link {
+	display: block;
+	float: left;
+	padding: 0px;
+}
+li.link a {
+	text-decoration: none;
+	display: block;
+	line-height: 30px;
+	font-weight: bold;
+	padding: 0px 10px;
+}
+/*ul li a:hover {
+	color: red;
+	background: #fff;
+	-moz-border-radius: 0px 0px 10px 10px;
+}*/
+.logout {
+	float:right;
+	margin-top: -15px;
+	margin-right: 50px;
+	padding-top: 0px;
+	line-height: 25px;
+	width: 0 auto;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+.logout a {
+	color: #000;
+}
+.logout a:hover {
+	color: red;
+}
+.logout h4 {
+	margin: 0px;
+	color: #fff;
+}
+.logout h4 span {
+	color: #fff;
+}
+#main-content table#list, #main-content table.list {
+	background: #000;
+}
+#main-content table {
+	background: #fff;
+}
+#main-content table th {
+	background: #afafaf; /*#4d4d4d;*/
+}
+#main-content table td, #main-content table th {
+	padding: 3px;
+}
+
+.odd, .row {
+	background: #fff; /*#898989;*/
+}
+.even {
+	background: #efefef; /*#cdcdcd; /*#656565;*/
+}
+tr.subrow {
+	height: 0px;
+}
+.subrowDiv {
+	display: none;
+}
+.required {
+	font-weight: bold;
+	color: red;
+}
+.pagination {
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin: 10px 0px;
+	float: left;
+	text-align: center;
+}
+.pagination p {
+	float: right;
+}
+.pagination a, .pagination strong {
+	display: block;
+	float: left;
+	padding: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #000;
+	margin-left: 10px;
+	color: blue;
+	background: #cdcdcd;
+}
+.pagination p strong {
+	background: #4d4d4d;
+	color: #ffc003;
+}
+#main-content .pagination a:hover {
+	background: #4d4d4d;
+	color: #ffc003;
+}
+#main-content table.outerTable {
+	background: none;
+}
+.pending_msg{
+	background:#4d4d4d;
+	font-size:14px;
+	font-weight:bold;
+	color:#ffc003;
+	width:300px;
+	height:30px;
+	text-align:center;
+}
+.searchDiv, #main-content .searchDiv table {
+	background: none;
+}
+#main-content .searchDiv table td, #main-content table.outerTable td {
+	min-height: 20px;
+}
+#main-content .auction-project table td {
+	min-height: 30px;
+}
+.search-result {
+	font-weight: bold;
+}
+#main-content table td.P-status, #main-content table td.p-status {
+	color: #ff9617;
+	font-weight: bold;
+}
+#main-content table td.A-status, #main-content table td.a-status {
+	color: green;
+	font-weight: bold;
+}
+#main-content table td.R-status, #main-content table td.r-status {
+	color: #ff0000;
+	font-weight: bold;
+}
+.slotsDiv {
+	width: 100px;
+	float: left;
+	border: 1px solid #ff7f27;
+	display: none;
+}
+.slot {
+	width: 100px; /*48px;*/
+	float: left;
+	height: 25px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	line-height: 25px;
+	background: #eee;
+	font-weight: bold;
+}
+.slot.selected {
+	background: #00ff00;
+}
+
+.betweenSlots {
+	float: left;
+	width: 100px;
+	height: 50px;
+	line-height: 20px;
+	text-align: center;
+}
+.error {
+	color: #ff0000;
+	padding: 5px;
+}
+.row td {
+	text-align: center;
+}
+.row td.first {
+	text-align: left;
+}
+.row.cost td {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+#fm_error {
+	color: red;
+	font-weight: bold;
+}
+.attach {
+	position: relative;
+}
+.bigimage, .video, .doc {
+	border: 1px solid #aaa;
+	background: #ccc;
+	font-weight: bold;
+	font-size: 14px;
+	float: left;
+	padding: 5px;
+	margin: 5px;
+}
+.show-bigimage, .show-video, .show-doc {
+	display: none;
+	position: absolute;
+	border: 1px solid #000;
+	/*padding: 5px;*/
+	top: 30px;
+	z-index: 10;
+}
+.show-bigimage {
+	width: 50px;
+	height: 50px;
+}
+.show-video, .show-doc {
+	background: #fff;
+	padding: 5px;
+}
+.head {
+	font-weight: bold;
+}
+.check-driver, .check-vehicle {
+	padding: 5px 0px 5px 5px;
+}
+input[type="text"], input[type="password"], select {
+	height: 20px;
+	padding: 3px;
+}
+#main-content table td select.select-list {
+	height: 200px;
+	width: 240px;
+}
+
+.run-title, .future-title {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	background: #afafff;
+	line-height: 30px;
+}
+.run-body, .future-body {
+	color: #000;
+	line-height: 25px;
+}
+
+.current-bid, .admin-bid-diff, .all-bids, .broadcast-div {
+	float: left;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 354px;
+}
+.all-bids {
+	width: 620px;
+}
+.section-body {
+	text-align: left;
+}
+.running-auctions, .auctions, .auction-results {
+	float: left;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	width: 800px;
+}
+.login-div
+{
+	float: left;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	width: 240px;
+}
+.custname, .running-bid {
+	float: left;
+	line-height: 40px;
+    padding: 5px;
+	font-size: 20px;
+}
+.running-bid {
+	font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 5px;
+	color: #000;
+}
+.section-title {
+	font-weight: bold;
+	background: url(../images/bgx.jpg) 0 -365px;
+	font-size: 14px;
+	height: 33px;
+	line-height: 30px;
+	color: #fff;
+}
+.all-bids .section-body {
+	text-align: left;
+	height: 300px;
+	overflow: auto;
+}
+.all-bids .section-body-prev {
+	text-align: left;
+}
+.admin-bid-rule {
+	font-size: 14px;
+	color: #ff0000;
+	font-weight: bold;
+	line-height: 25px;
+}
+.auction-project {
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+	border: 1px solid #aaa;
+}
+div.table {
+	float: left;
+}
+div.auctionDetails {
+	float: left;
+	width: 300px;
+	padding: 10px;
+}
+.running-counter {
+	font-size: 14px;
+	font-weight: bold;
+	color: #ff0000;
+}
+.button, .button2, .button3, .button5 {
+	background: url(../images/button1.jpg);
+	height: 33px;
+	font-weight: bold;
+	color: #000;
+	border: medium none;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 200px;
+}
+.button2, .button5 {
+	width: 120px;
+}
+.timer-run {
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 10px;
+}
+.auction-timer-div, .participants-div, .participants-bid-div {
+	border: 1px solid #AAAAAA;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 5px;
+    padding: 2px;
+    width: 170px;
+}
+.participants-bid-div {
+	width: 98%;
+}
+.auction-timer-div .section-title, .participants.section-title {
+	background: url(../images/bgx.jpg) 0 -400px;
+}
+.participants-div .user, .participants-bid-div .user {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 5px;
+}
+.future-auctions {
+	margin-top: 20px;
+}
+.project-title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #EF6202;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+.bank {
+	color: #3E747D;
+	line-height: 25px;
+}
+.start-bid {
+	color: #3E747D;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 25px;
+}
+.contacts-div {
+	border: 1px solid #ccc;
+	margin-top: 30px;
+}
+.proj-title, .ao-info {
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 25px;
+	background: #efefff;
+	padding: 5px;
+}
+.ao-info {
+	color: #EF6202;
+}
+.bid-rule {
+	color: red;
+	font-size: 14px;
+	line-height: 25px;
+}
+.current-time {
+	text-align: left;
+	padding-left: 20px;
+	color: #ff0000;
+}
+.user-quote {
+	line-height: 30px;
+}
+.user-quote.odd {
+	background: #efefef;
+	color: #000;
+	font-weight: bold;
+}
+.user-quote.even {
+	background: #efefef; /*#dfdfdf;*/
+	color: #000;
+	font-weight: bold;
+}
+.alertDiv, .alertDiv2 {
+	position: absolute;
+	display: none;
+	border: 1px solid #000;
+	top: 200px;
+	left: 300px;
+	width: 400px;
+	height: 200px;
+	z-index: 999;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);  
+	-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+.alertDiv .section-body, .alertDiv2 .section-body {
+	background: #fff;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 25px;
+	z-index: 990;
+	height: 140px;
+}
+html>body .alertDiv .section-body, html>body .alertDiv2 .section-body {
+	height: 95px;
+}
+.alertDiv .section-footer, .alertDiv2 .section-footer {
+	background: #fff;
+}
+td.projName {
+	position: relative;
+}
+div.participantsList {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	background: #fff;
+	border: 1px solid #000;
+	width: 200px;
+}
+.close-button {
+	float: right;
+}
+.close-button a, #main-content .close-button a {
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	display: block;
+}
+.participant-title {
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 5px;
+	background: #006672;
+}
+div.participant {
+	line-height: 30px;
+	padding: 0px 5px;
+	background: url(../images/bgx.jpg) 0 -365px;
+	color: #fff;
+}
+.live-bid {
+	float: left;
+	width: 620px;
+	margin: 5px;
+	background: #f4d1c0;
+	border: 6px solid #EF6202;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.photo, .proof, .dd {
+	display: none;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #000;
+}
+
+/*  td img:not(.mainhead) {
+	width: 20px;
+} 
+td .statcounter img{
+	width: 70px;
+	height: 15px;
+}
+.auction-image img {
+	width: 100px;
+} */
+ td img:not(.mainhead) {
+	width: 20px;
+} 
+td .statcounter img{
+	width: 70px;
+	height: 15px;
+}
+td.auction-image img {
+	width: 100px;
+} *
+	
+.editPropImg {
+	width: 100px;
+}
+.min-bid, .max-bid {
+	padding: 5px;
+}
+#disp-timer {
+	height: 40px;
+}
+.highestBid {
+	color: #fff;
+	font-weight: bold;
+	background: #f4a1a0; /*#ff0000;*/ /*#efefff;*/
+}
+.banker-info {
+	padding: 3px;
+	line-height: 25px;
+	/*height: 25px;*/
+	font-weight: bold;
+	color: #000; /*#EE6202;*/
+	border: 1px solid #afafaf;
+	/*background: #fff;*/
+}
+.banker-info.odd {
+	background: #dfdfff; /*#bfbfff;*/
+}
+.banker-info.even {
+	background: #dfdfff; /*#9f9fff;*/
+}
+
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+
+/*** timer css start **/
+#clockHolder {
+	width: 200px;
+	height: 200px;
+	margin:0px auto 0px auto;
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index: 0;
+}
+.clock-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+#clock {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#hours {
+	width: 6px;
+	height: 120px;
+	/*position: absolute;
+	/*left: 97px;
+	top: 40px;*/
+	z-index: 10;
+}
+#minutes {
+	width: 6px;
+	height: 184px;
+	/*position: absolute;
+	/*left: 97px;
+	top: 8px;*/
+	z-index: 20;
+}
+#seconds {
+	width: 12px;
+	height: 184px;
+	/*position: absolute;
+	/*left: 95px;
+	top: 8px;*/
+	z-index: 30;
+}
+#hoursDiv {
+	width: 6px;
+	height: 120px;
+	position: absolute;
+	/*left: 97px;
+	top: 40px;*/
+}
+#minutesDiv {
+	width: 6px;
+	height: 184px;
+	position: absolute;
+	/*left: 97px;
+	top: 8px;*/
+}
+#secondsDiv {
+	width: 12px;
+	height: 184px;
+	position: absolute;
+	/*left: 95px;
+	top: 8px;*/
+}
+
+#sec
+{
+	display: block;
+	position: absolute;
+	left: 95px;
+	top: 8px;
+	text-align: left;
+}
+#min
+{
+	display: block;
+	position: absolute;
+	left: 97px;
+	top: 8px;
+	text-align: left;
+}
+#hour
+{
+	/*display: block;*/
+	position: absolute;
+	left: 97px;
+	top: 40px;
+	text-align: left;
+}
+
+.rotatingWrapper
+{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+}
+/*** timer css end **/
+
+.my-info {
+	height: 50px;
+	overflow: scroll;
+	display: none;
+}
+#main-content .banker-info table, #main-content .banker-info table td, #main-content .banker-info table th {
+	background: none;
+}
+#main-content .user-quote table, #main-content .user-quote table td, #main-content .user-quote table th {
+	background: none;
+}
+.propAddress {
+	line-height: 25px;
+	padding: 5px;
+	background: #efefef;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.bid-loading, .prev-bid-loading {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 30px;
+	border: 1px solid #000;
+	display: none;
+}
+.errorMsg {
+	font-weight: bold;
+	color: red;
+	line-height: 25px;
+	border: 1px solid red;
+	background: #ffd7d7;
+}
+.successMsg {
+	font-weight: bold;
+	color: #00c100;
+	line-height: 25px;
+	border: 1px solid #00c100;
+	background: #d7ffd7;
+}
+/* ul#tabmenu
+{
+    width:100%;
+    margin: 0 auto; If the menu has a width, this "margin:0 auto;" makes the menu center-aligned. You can remove it for left-alignment, or change it to "margin-left:auto; margin-right:0;" for right-alignment.
+    text-align:center;
+    list-style:none;
+    padding:0;
+    font-size:0;
+    position:relative;
+    min-height:62px;
+}
+ul#tabmenu:after
+{
+    content:'.'; height: 0; clear: both; display: block; visibility: hidden;
+}
+        
+ul#tabmenu li
+{
+    display:inline;
+    list-style:none; padding:0;
+    margin-top:0;margin-bottom:0;
+    margin-left:6px;margin-right:6px;
+}
+        
+Main menu links
+ul#tabmenu li a
+{
+    letter-spacing:normal;
+    color:#FFFFFF;
+    padding:0 14px;
+    line-height:26px;
+    font-size:11px;
+    font-weight:bold;
+    font-family:Arial;
+    text-decoration:none;
+    display:inline-block; 
+    outline:0;
+    
+    border:1px solid #C2D5EF;
+    border-bottom:none;
+    background:;#5b8ecb
+    position:relative;
+    top:1px;
+    z-index:4;  
+    border-radius:4px 4px 0 0;
+}
+If you've set the menu's javascript file with { preview:false }, you may want to specify the following hovered tab styles    
+ul#tabmenu li a:hover {
+    color: red;
+    background: black;
+}
+
+ul#tabmenu li.active a
+{
+    padding-bottom:1px;
+    background: #F3F7FD;
+    color:#244D8A;
+}
+
+You can set active tab's style when hovered
+ul#tabmenu li.active a:hover {
+    color:green;
+} */
+       
+#sse3,#csse3
+{
+    background-color: #036;
+    height: 50px;
+    clear:both;
+    text-align:center;/*For IE5 or IE No DOCTYPE*/
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+        
+#sses3,#csses3
+{
+    /* margin: 0 auto; *//*If you don't want the menu center aligned, remove this line and above text-align:center*/
+    border-left:solid 1px #0AE;
+}
+        
+#sses3 ul,#csses3 ul
+{
+    font: normal 13px Arial;
+    list-style-type: none;
+    float:left;
+    padding:0;margin:0;
+}
+        
+#sses3 li,#csses3 li
+{
+    background: url(../images/mb3_2_1.png);
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;/*used to hide slip*/
+    z-index: 0;
+    float:left;
+    list-style-type: none;
+    padding:0;margin:0;
+    border-right:solid 1px #0AE;
+}
+        
+#sses3 li.current, #sses3 .slip,#csses3 li.current,#csses3 .slip
+{
+    background: #006396;
+}
+        
+#sses3 li a,#csses3 li a
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 0 30px;/*30px is used to adjust the distance between each menu item. Now the distance is 30+30=60px.*/
+    /*width: 100px;*/ /*If you prefer a fixed width, uncomment this line and comment out above line*/
+    color: white;
+    display: block;
+    z-index: 2;
+    white-space:nowrap;
+}
+        
+#sses3 li.current a,#csses3 li.current a
+{
+    color: white;
+}
+        
+#sses3 .slip,#csses3 .slip
+{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+/* CSS for Vertical Menu */
+/* .cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.cssmenu ul,
+.cssmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cssmenu ul {
+  position: relative;
+  z-index: 597;
+}
+.cssmenu ul li {
+  min-height: 1px;
+  line-height: 1em;
+}
+.cssmenu a {
+  display: block;
+  text-decoration: none;
+}
+Custom CSS Styles
+.cssmenu {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  width: 160px;
+}
+.cssmenu ul {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background-color: #F1F1F1;
+  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: linear-gradient(#ffffff, #f5f5f5);
+  border: 1px solid #CCC;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.cssmenu li {
+  border-bottom: 1px solid #CCC;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+  box-shadow: 0 1px 0 white;
+  padding: 1px;
+}
+.cssmenu li:last-child,
+.cssmenu li.last {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 0 none;
+}
+.cssmenu li.active {
+  -moz-box-shadow: 1px 2px 0 -1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 2px 0 -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 0 -1px rgba(0, 0, 0, 0.25);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAuCAIAAABmjeQ9AAAAA3NCSVQICAjb4U/gAAAAPElEQVQImYWOwQkAIAwDj2zsfM7hPOejCAUFf01zbcKYK0LUCEFKYzyzhK4bX97Ni7X357Vfr6xz37vpBp6xRxdc29qIAAAAAElFTkSuQmCC);
+  background-image: -webkit-linear-gradient(top, #71bbd5, #4aa8c9);
+  background-image: -moz-linear-gradient(top, #71bbd5, #4aa8c9);
+  background-image: -o-linear-gradient(top, #71bbd5, #4aa8c9);
+  background-image: linear-gradient(#71bbd5, #4aa8c9);
+  position: relative;
+  left: -8px;
+  width: 170px;
+}
+.cssmenu li.active a {
+  border: 1px dashed #98cee1;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  border-right: 0 none;
+  position: relative;
+  color: #FFF;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+.cssmenu li.active:before,
+.cssmenu li.active:after {
+  content: '';
+}
+.cssmenu li.active:before {
+  z-index: 1;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-style: solid;
+  border-width: 0 8px 5px 0;
+  border-color: transparent #338dad transparent transparent;
+}
+.cssmenu li.active:after {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAwCAYAAAD6g+EuAAAFf0lEQVR4Xp2WXUxcRRSA51yWhaUgoKlJNUasT/qgDyYmJiY1qTYmvEiDLa1BTfCvlkLVF3xSCS+NaWyMMZo08amGxlhaI7srpKmGalIjNUIptQAtwPK7BYFd9kJ373jmf253IQsDJ/Oz937nZ87MufBB98BfhJC9KEskzwYoNI/nHErJM9h3oZSTHC9RfICaCad65tesEbXEEUD6LEoEOaWMRDVHNNBzQOEDA+EK5ZrUABIAJ/4YoTOra8SjHoNcRtS+L158MkW22Y53XxcKlOWP3leMmoApex4lcrx7ILRNtvJHhCWWSBE37bGp9I7uwS7SvH0FikMcpmFqxRUKAbUBsF/34PxCUxcq2BZYiGNPKBUhAnDY/CVcOXes61pwS3Br4DAitVxxMx6pKg/xOcrLuIQKBoL5w82fY+Uyl8lll6QyGfkYb9WopL3xl/w8sDKTOJ61v1RqiKECvm6yvIYSpqA/mEdYNMeRWK3Nk0KpWKuqYHvAATUegTNHo/0Fm9OpNtbxqO/syhNoFtbSbA9KpLu0Fvsz70evFWxsOUgdKlsk1LsnnZjicUxT924Gx/rYH0Ql3x2J5PYAn2Mi4cSAkKrBVFkvFOgNBgDW16MhpzeMuslzkzrWWCnQYfKEUp6mIDb5zXcj/VkKZPjUrQhyd7EHYBABknPsfTegm8ngJocUpOGdcJ9PASWgn3VUrHHCxR875ZFxeGLJxU3O4FhnV8Pb4b6v7ffM8dcbxWASShRNh0Z6w2FkfDklxsw6EYojb3X2nZIv6dD47xY+MqFAJXzsUft3/4Y/VlHC9wCfbW7o/Ocktc5IwdOH3/vUX7AkaLNLCcx4R2GA7NwRJP+5aQZ8DgHFKBf1rehZ5nvaQlO6qFmRLpuQjS+JerC7Ej0QCdGCuDaGhDd++ht7u6KDstOM/HU/q/qDPTLha3WosthYqQ+TZ6w1SawPnPGAd1YyUKFBpaJpfijPEg30eG+8Ue8WFQB5YmcZuT9UyAGr8blvEPNJwKNACMj4ghUearkJMkTiWekh8LXiAJDHK0uxDqRwU++SxbGh7zubD55lhxleO39Vee2P5UZrHEr12lMPlmHeu2SJgceH28NNB76VgNuOfTpNFtj3uykk5v7xZ8tiah3BIz9Y4PHD53tvQ11HL82dA3Ye+H0rDQZIcj2t31meuPVjuKn2KwVG5igbOFamGMuVqD8K8uQiGA/N7ooSteEIHrXBE3XnekcFC0jAy76Hs4+kdXlVIXhoIckNWond6og0varBqGykruOq5jnaOq5Ox1TO7dtS9EOLCZLEyrQ8NXYhcqz2S0maZGBipa/H4OYggO/QSBzvK0OFei257pGVqbGfo437T1ngYTk21wcFZnmu+4Pq0vdAKEgeLgvpw5OYmQhHGveflKyYAisxJ55brouFMRlMKu4qLSI34isCPD0Zjh595XPJmULwUM4vLhBjh6olrg3Ekfb0zYjgBFYeShKzsWi00Qe+mbM8m30y1d/Oil1lxUIZylrGI8m5WPTiR4cUeNqAs8W+hxytSS48hODK4oCuGIn56S4GTrurngT/m+9XbkBlimrlRQEyGE/yuK3OT3Vd+vDQCQmeUeBN4WrPAEjACgn/H7yTIBn0KxWfuWSDUSR4cxFsFPEJTbHIhnQaphG1ysF1bRI8y8CUp1N+eJV4AXZPBBxHH++1hdnffvWDb+QNtssAgwMAubmQ4DP3zjyCD7RK8NwWwSa6cuAMLyZ46qQW4z09H7/eZoEHDTh/sT+ooPrsFeouxHsut9S3ri0tpBEwj3K9uv1PywYgAFT4S2UPVuWG3HWr4JG9Nft+b6n/zA++YkyG7FLiH5tmuwmyxr4g53EG5p5toW0WOScP8Lbb/yWlseJoPWlNAAAAAElFTkSuQmCC) no-repeat;
+  display: block;
+  height: 48px;
+  width: 24px;
+  position: absolute;
+  right: -24px;
+  top: 0px;
+  z-index: 1;
+}
+.cssmenu a {
+  border: 1px solid transparent;
+  color: #444;
+  height: 42px;
+  line-height: 40px;
+  padding: 0 12px;
+  text-align: right;
+  text-overflow: ellipsis;
+}
+ */
+.panel{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 180px; /* width of menu */
+}
+
+.panel li{
+border-bottom: 1px solid white; /* white border beneath each menu item */
+}
+
+.panel li a{
+background:  #003366 url(../images/mb3_2_1.png) no-repeat right top; /*color of menu by default*/
+font: bold 13px "Lucida Grande", "Trebuchet MS", Verdana;
+display: block;
+color: white;
+width: auto;
+padding: 5px 0; /* Vertical (top/bottom) padding for each menu link */
+text-indent: 8px;
+text-decoration: none;
+border-bottom: 1px solid black; /*bottom border of menu link. Should be equal or darker to link's bgcolor*/
+}
+
+.panel li a:visited, .panel li a:active{
+color: white;
+} 
+
+.panel li a:hover{
+background-color: #006396; /*color of menu onMouseover*/
+color: white;
+border-bottom: 1px solid black; /*bottom border of menu link during hover. Should be equal or darker to link's hover's bgcolor*/
+}
+ul.panel li.current a{
+	
+	 background-color: #006396; 
+	 }
+
+/*  CSS FOR BUTTON */
+input[type="submit"],input[type="button"]
+					,input[type="reset"],
+					 input[type="button"]:visited,
+					 input[type="button"]:visited,
+					 input[type="button"]:visited
+					 input[type="button"]:visited,
+					 input[type="button"]:visited,
+					 input[type="submit"]:visited,
+					 input[type="reset"]:visited{
+
+	display: inline-block; 
+	padding: 3px 7px 4px; 
+	color: #fff; 
+	text-decoration: none;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer
+}
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+font-size: 13px; 
+font-weight: bold; 
+line-height: 1; 
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25); 
+background-color: #003366;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]
+{
+	background-color: #006396; color: #fff;
+}
+
+/*----------------------------END---------------------*/
+
+/*CSS for input boxes */
+input[type="text"],input[type="password"]{
+outline:none;
+background-color:white;
+padding:3px;
+-webkit-border-top-left-radius: 8px;
+-moz-border-radius-topleft: 8px;
+-webkit-border-bottom-right-radius: 8px;
+-moz-border-radius-bottomright: 8px;
+}
+
+textarea {
+	outline:none;
+	border-color:black;
+	padding:3px;
+	background-color:white;
+    width: 160px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-border-top-left-radius: 1 em;
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+    resize: none;
+    
+}
+
+textarea:focus {
+    box-shadow: inset 0 0 1px 1px #f90;
+}
+ 

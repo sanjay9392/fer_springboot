@@ -1,0 +1,369 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+}
+.clear {
+	clear: both;
+}
+a {
+	text-decoration:none;
+}
+body {
+	background: #aaa; /*url(../images/bg1.gif); /* #4d4d4d;*/
+}
+#wrapper {
+	margin: 0px auto;
+	width: 1000px;
+}
+/* #header {
+	width: 100%;
+	height: 85px;
+	background: url(../images/bgx.jpg) repeat-x;
+	margin-top: 20px;
+	-moz-border-radius: 10px;
+}
+#header-top {
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	height: 35px;
+} */
+#content {
+	background: #fff; /*#ffcccc;*/
+}
+#top-navigation{
+	float: right;
+	padding: 0px;
+	background: #006672; /*#B11015; /*#ffc003;*/
+	height: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+ul.top-menu, ul.menu {
+	list-style-type: none;
+}
+ul.top-menu li, ul.menu li {
+	float: left;
+	padding: 0px 10px;
+}
+ul.top-menu li a, ul.menu li a {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 12px;
+	/*font-weight: bold;*/
+}
+ul.top-menu li a:hover, ul.menu li a:hover {
+	color: #ffff00;
+}
+#navigation{
+	padding: 0px;
+	background: #EF6202; /*#B11015; /*#ffc003;*/
+	 height: 30px; 
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	float: left;
+}
+#content-left, #content-right {
+	float: left;
+	/*width: 500px;*/
+	min-height: 400px;
+}
+#content-left {
+	width: 620px;
+	padding: 20px;
+}
+.banner {
+	height: 310px;
+}
+ul.faded {
+	list-style-type: none;
+}
+.welcome {
+	padding: 20px 0px;
+}
+#content-right {
+	/*background: #908f8d;*/
+	/*margin-top: 10px;
+	margin-bottom: 10px;*/
+	/*-moz-border-radius: 10px;*/
+	font-size: 12px;
+    margin-right: 0px;
+    /*min-height: 200px;*/
+    padding: 20px;
+	line-height:30px;
+}
+#content-right h2 {
+	font-size: 14px;
+	color: #B11015;
+}
+#footer-top {
+	width: 100%;
+	height: 150px;
+	background: #fff; /*#ffcccc;*/
+}
+#footer-bottom {
+	width: 100%;
+	height: 40px;
+	background: #BEEBF0; /*#B11015;*/
+}
+.copyright, .hits-counter {
+	float: left;
+	line-height: 40px;
+	color: #363636;
+	padding-left: 20px;
+}
+.hits-counter {
+	font-weight: bold;
+}
+.powered {
+	float: right;
+	padding-right: 20px;
+	color: #363636;
+	line-height: 40px;
+}
+.powered a {
+	color: #363636;
+}
+.powered a:hover {
+	color: #000;
+}
+#footer {
+	margin-bottom: 50px;
+}
+h1 {
+	font-size:30px;
+}
+
+input[type="text"] {
+	height: 20px;
+	line-height: 16px;
+	color: #363636;
+}
+.row-head {
+	background: #666;
+	color: #fff;
+}
+.odd, .row {
+	background: #fff; /*#898989;*/
+}
+.even {
+	background: #cdcdcd; /*#656565;*/
+}
+tr.subrow {
+	height: 0px;
+}
+.subrowDiv {
+	display: none;
+}
+.required {
+	font-weight: bold;
+	color: red;
+}
+.pagination {
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin: 10px 0px;
+	float: left;
+	text-align: center;
+}
+.pagination p {
+	float: right;
+}
+.pagination a, .pagination strong {
+	display: block;
+	float: left;
+	padding: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #000;
+	margin-left: 10px;
+	color: blue;
+	background: #cdcdcd;
+}
+.pagination p strong {
+	background: #4d4d4d;
+	color: #ffc003;
+}
+
+.error {
+	color: #ff0000;
+	padding: 5px;
+}
+.row td {
+	text-align: center;
+}
+.row td.first {
+	text-align: left;
+}
+.row.cost td {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+#fm_error {
+	color: red;
+	font-weight: bold;
+}
+#container-body {
+	text-align: left;
+}
+#main-content {
+	padding: 20px;
+}
+.fleet-title {
+	text-align: left;
+	font-weight: bold;
+	font-size: 16px;
+}
+.fleet-content {
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.tariff-content {
+	margin-top: 20px;
+}
+.pkgName {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 5px 5px;
+}
+.pkgDescr {
+	font-size: 12px;
+	padding: 5px;
+}
+.tariff-table {
+	margin: 0px 5px;
+}
+.tariff-table th, .tariff-table td {
+	padding: 5px;
+}
+.no-tariff {
+	padding: 0px 5px;
+}
+.rightside {
+	width: 200px;
+	padding: 20px;
+}
+
+.current-bid, .admin-bid-diff {
+	float: left;
+	padding: 5px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.running-auctions, .auctions, .auction-results {
+	float: left;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	width: 580px;
+}
+.section-title {
+	background: url(../images/bgx.jpg) 0 -365px; /*#afafff;*/
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	padding: 5px;
+}
+.auction-project {
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #aaa;
+}
+.admin-bid-rule {
+	font-size: 14px;
+	color: #ff0000;
+	font-weight: bold;
+}
+.login-div {
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.login.section-title {
+	background: url(../images/bgx.jpg) 0 -400px;
+}
+.login-div table th, .login-div table td {
+	padding: 5px;
+}
+.login-div input[type="text"], .login-div input[type="password"] {
+	border: 1px solid #51C9D8;
+	padding: 2px;
+	line-height: 20px;
+	height: 25px;
+}
+.button, .button2 {
+	background: url(../images/button1.jpg);
+	height: 33px;
+	font-weight: bold;
+	color: #000;
+	border: medium none;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 200px;
+}
+.button2 {
+	width: 120px;
+}
+.timer-run {
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 10px;
+}
+.project-title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #EF6202;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+.bank {
+	color: #3E747D;
+	line-height: 25px;
+}
+.start-bid {
+	color: #3E747D;
+	font-weight: bold;
+	font-size: 14px;
+}
+.bid-rule {
+	color: red;
+	font-size: 14px;
+}
+.timer-run {
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 10px;
+}
+.fprocessDiv {
+	padding-left: 10px;
+	font-weight: bold;
+	color: #ff0000;
+}
+.contact-info {
+	color: #EF6202;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 25px;
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.zedapp.eauction.model.Article" table="article">
+		<id  name="articleId" column="article_id">
+			<generator class="increment"/>
+		</id>
+		<property name="articleName" column="article_name"/>
+		<property name="articleDesc" column="article_desc"/>
+		<property name="addedDate" column="date_added"/>
+    </class>
+    <class name="com.zedapp.eauction.model.User" table="ea_users">
+		<id  name="userId" column="uid">
+			<generator class="increment"/>
+		</id>
+		<property name="userName" column="uname"/>
+		<property name="password" column="pwd"/>
+		<property name="custId" column="typeId"/>
+		<property name="userType" column="utype"/>
+		<property name="loginStrartDate" column="loginStrartDate"/>
+		<property name="status" column="status"/>
+		<property name="uniqueId" column="uuid"/>
+		<property name="lastLoginDate" column="lastLoginDt"/>
+		<property name="isLogin" column="isLogin"/>
+		<property name="otpCode" column="otp"/>
+		<property name="mobileNo" column="mobile"/>
+		<property name="auctionId" column="aid"/>
+		<property name="createdDate" column="created_dt"/>
+		<property name="createdBy" column="created_by"/>
+		<property name="modifiedDate" column="modified_dt"/>
+		<property name="modifiedBy" column="modified_by"/>
+		
+    </class>
+    <class name="com.zedapp.eauction.model.Permission" table="ea_perms">
+		<id  name="permId" column="pid">
+			<generator class="increment"/>
+		</id>
+		<property name="permissionName" column="pname"/>
+		<property name="permissionDescr" column="pdescr"/>
+    	<property name="createdDate" column="createdDt"/>
+		<property name="createdBy" column="createdBy"/>
+		<property name="modifiedDate" column="modifiedDt"/>
+		<property name="modifiedBy" column="modifiedBy"/>
+		
+    </class><!--
+    
+    <class name="com.zedapp.eauction.model.Customer" table="ea_customers">
+		<id  name="custId" column="cid">
+			<generator class="increment"/>
+		</id>
+		<property name="custName" column="cname"/>
+		<property name="address" column="addr"/>
+		<property name="city" column="city"/>
+		<property name="state" column="state"/>
+		<property name="pincode" column="pincode"/>
+		<property name="country" column="country"/>
+		<property name="email" column="email"/>
+		<property name="mobile" column="mobile"/>
+		<property name="otpCode" column="otp"/>
+		<property name="mobileNo" column="mobile"/>
+		<property name="auctionId" column="aid"/>
+		<property name="createdDate" column="created_dt"/>
+		<property name="createdBy" column="created_by"/>
+		<property name="modifiedDate" column="modified_dt"/>
+		<property name="modifiedBy" column="modified_by"/>
+		
+    </class>
+    
+--></hibernate-mapping>

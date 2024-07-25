@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+
+
+<tiles-definitions>
+
+	<definition name="mainLayout" path="/Layout/MainLayout.jsp">
+		<put name="header" value="/Layout/Header.jsp" />
+		<put name="leftFrame" value="/Layout/LeftFrame.jsp" />
+		<put name="body" value="/Layout/Body.jsp" />
+		<put name="subFooter" value="/Layout/SubFooter.jsp" />
+		<put name="Footer" value="/Layout/Footer.jsp" />
+	</definition>
+
+	<definition name="dashboard" extends="mainLayout">
+		<put name="body" value="/Success.jsp" />
+	</definition>
+	
+	<definition name="nameInfo" extends="mainLayout">
+		<put name="body" value="/NameInfo.jsp" />
+	</definition>
+	
+	<definition name="contactInfo" extends="mainLayout">
+		<put name="body" value="/ContactInfo.jsp" />
+	</definition>
+	
+	<definition name="addressInfo" extends="mainLayout">
+		<put name="body" value="/AddressInfo.jsp" />
+	</definition>
+	
+	<definition name="review" extends="mainLayout">
+		<put name="body" value="/Review.jsp" />
+	</definition>
+			
+		
+    <definition name="addExpense" extends="mainLayout">
+		<put name="body" value="/AddExpense.jsp" />
+		</definition>
+		
+		<definition name="AddExpenseSuccess" extends="mainLayout">
+		<put name="body" value="/AddExpenseSuccess.jsp" />
+	</definition>
+	
+	<definition name="AddExpenseFailure" extends="mainLayout">
+		<put name="body" value="/AddExpenseFailure.jsp" />
+	</definition>
+	
+	
+	<definition name="editExpense" extends="mainLayout">
+		<put name="body" value="/EditExpense.jsp" />
+		</definition>
+	
+	<definition name="EditExpenseDropdown" extends="mainLayout">
+		<put name="body" value="/EditExpenseDropdown.jsp" />
+	</definition>
+	
+	<definition name="EditExpenseStatus" extends="mainLayout">
+		<put name="body" value="/EditExpenseStatus.jsp" />
+	</definition>
+	
+	<definition name="DeleteExpenseDropdown" extends="mainLayout">
+		<put name="body" value="/DeleteExpenseDropdown.jsp" />
+	</definition>
+	
+	<definition name="DeleteExpenseStatus" extends="mainLayout">
+		<put name="body" value="/DeleteExpenseStatus.jsp" />
+	</definition>
+	
+	<definition name="expenseReport" extends="mainLayout">
+		<put name="body" value="/ExpenseReport.jsp" />
+	
+	<definition name="ExpenseReportSuccess" extends="mainLayout">
+		<put name="body" value="/ExpenseReportSuccess.jsp" />
+	</definition>
+	
+	<definition name="ExpenseReportFailure" extends="mainLayout">
+		<put name="body" value="/ExpenseReportFailure.jsp" />
+	</definition>
+	
+	</definition>
+	<definition name="resetPassword" extends="mainLayout">
+		<put name="body" value="/ResetPassword.jsp" />
+	</definition>
+	
+	<definition name="ResetPasswordSuccess" extends="mainLayout">
+		<put name="body" value="/ResetPasswordSuccess.jsp" />
+	</definition>
+	
+	<definition name="ResetPasswordFailure" extends="mainLayout">
+		<put name="body" value="/ResetPasswordFailure.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>

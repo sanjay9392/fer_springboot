@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+
+
+<tiles-definitions>
+
+	<definition name="mainLayout" path="/Layout/MainLayout.jsp">
+		<put name="header" value="/Layout/Header.jsp" />
+		<put name="leftFrame" value="/Layout/LeftFrame.jsp" />
+		<put name="body" value="/Layout/Body.jsp" />
+		<put name="subFooter" value="/Layout/SubFooter.jsp" />
+		<put name="Footer" value="/Layout/Footer.jsp" />
+	</definition>
+
+	<definition name="dashboard" extends="mainLayout">
+		<put name="body" value="/Dashboard.jsp" />
+	</definition>
+
+	<definition name="addExpense" extends="mainLayout">
+		<put name="body" value="/AddExpense.jsp" />
+	</definition>
+
+	<definition name="editExpenseOptions" extends="mainLayout">
+		<put name="body" value="/EditExpenseOptions.jsp" />
+	</definition>
+	<definition name="editExpense" extends="mainLayout">
+		<put name="body" value="/EditExpense.jsp" />
+	</definition>
+	
+	<definition name="deleteExpenseOptions" extends="mainLayout">
+		<put name="body" value="/DeleteExpenseOptions.jsp" />
+	</definition>
+
+	<definition name="resetPassword" extends="mainLayout">
+		<put name="body" value="/ResetPassword.jsp" />
+	</definition>
+	
+	<definition name="expenseReportSelection" extends="mainLayout">
+		<put name="body" value="/ExpenseReportSelection.jsp" />
+	</definition>
+	<definition name="expenseReport" extends="mainLayout">
+		<put name="body" value="/ExpenseReport.jsp" />
+	</definition>
+	
+	<definition name="nameInfo" extends="mainLayout">
+		<put name="body" value="/NameInfo.jsp" />
+	</definition>
+	<definition name="contactInfo" extends="mainLayout">
+		<put name="body" value="/ContactInfo.jsp" />
+	</definition>
+	<definition name="addressInfo" extends="mainLayout">
+		<put name="body" value="/AddressInfo.jsp" />
+	</definition>
+	<definition name="review" extends="mainLayout">
+		<put name="body" value="/Review.jsp" />
+	</definition>
+	
+
+
+
+
+</tiles-definitions>

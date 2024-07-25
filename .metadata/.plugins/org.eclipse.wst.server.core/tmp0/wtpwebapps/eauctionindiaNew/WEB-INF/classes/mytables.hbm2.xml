@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.zedapp.eauction.model.Article" table="article">
+		<id  name="articleId" column="article_id">
+			<generator class="increment"/>
+		</id>
+		<property name="articleName" column="article_name"/>
+		<property name="articleDesc" column="article_desc"/>
+		<property name="addedDate" column="date_added"/>
+    </class>
+    
+   <class name="com.zedapp.eauction.model.Attorney" table="ea_cust_attorney">
+   <id name="atid" column="atid">
+    <generator class="increment"/>
+   </id>
+   <property name="cid" column="cid"/>
+   <property name="addr" column="addr"/>
+   <property name="city" column="city"/>
+   <property name="state" column="state"/>
+   <property name="pincode" column="pincode"/>
+   <property name="createdDt" column="created_dt"/>
+   <property name="modifiedDt" column="modified_dt"/>
+   <property name="createdBy" column="crated_by"/>
+   <property name="modifiedBy" column="modified_by"/>
+   <property name="quotation" column="quotation"/>
+   <property name="photo" column="photo"/>
+   <property name="proof" column="proof"/>
+   <property name="dd" column="dd"/>
+   <property name="pan" column="pan"/>
+   <property name="ddNo" column="ddNo"/>
+   <property name="ddDt" column="ddDt"/>
+   <property name="ddBank" column="ddBank"/>
+   <property name="proof2" column="proof2"/>
+   <property name="photo2" column="photo2"/>
+   <property name="cname2" column=""/>
+   </class>    
+   
+  <class name="com.zedapp.eauction.model.AuctionCustomers" table="ea_auction_customers" >
+ <id name="aid" column="aid">
+ <generator class="increment"/>
+ </id>
+  <property name="cid" column="cid"/>
+  <property name="createdDt" column="created_dt"/>
+  <property name="createdBy" column="created_by"/>
+  </class> 
+  <class name="com.zedapp.eauction.model.Auctions" table="ea_proj_auctions">
+  <id name="aid" column="aid" >
+  <generator class="increment"/>
+    </id>
+   <property name="pid" column="pid"/>
+   <property name="auctionDate" column="auctionDate"/>
+   <property name="createdBy" column="created_by"/>
+   <property name="modifiedDt" column="modified_dt"/>
+   <property name="modifiedBy" column="modified_by"/>
+   <property name="createdDt" column="created_dt"/>
+   <property name="status" column="status"/>
+   <property name="comments" column="comments"/>
+   <property name="winId" column="winId"/>
+   <property name="winBidAmt" column="winBidAmt"/>
+   <property name="counter" column="counter"/>
+   <property name="startedDt" column="started_dt"/>
+   <property name="closedDt" column="closed_dt"/>
+   <property name="timerDt" column="timer_dt"/>
+   <property name="isclosingTimer" column="isclosing_timer"/>
+   <property name="aoid" column="aoid"/>
+   <property name="contactNos" column="contactnos"/>
+  </class>
+  
+  
+  <class name="com.zedapp.eauction.model.Bankers" table="ea_bankers">
+   <id name="bid" column="bid">
+   <generator class="increment"/>
+   </id>
+   <property name="bankName" column="bankName"/>
+   <property name="addr" column="addr"/>
+   <property name="street" column=" street"/>
+   <property name="city" column="city"/>
+   <property name="state" column="state"/>
+   <property name="pincode" column="pincode"/>
+   <property name="country" column="country"/>
+   <property name="createdDt" column="created_dt"/>
+   <property name="createdBy" column="created_by"/>
+   <property name="modifiedDt" column="modified_dt"/>
+   <property name="modifiedBy" column="modified_by"/>
+ </class>
+ 
+ 
+ <class name="com.zedapp.eauction.model.Bidrules" table="ea_auction_bidrules">
+  <id name="brid" column="brid">
+   <generator class="increment"/>
+  </id>
+  <property name="aid" column="aid"/>
+  <property name="minBidDiff" column="minBidDiff"/>
+  <property name="createdBy" column="created_by"/>
+  <property name="createdDt" column="created_dt"/>
+  <property name="modifiedBy" column="modified_by"/>
+  <property name="modifiedDt" column="modified_dt"/>
+  <property name="userId" column="user_id"/>
+  <property name="maxBidDiff" column="maxBidDiff"/>
+  </class>
+  
+  <class name="com.zedapp.eauction.model.Bids" table="ea_auction_bids">
+  <id name="abid" column="abid">
+  <generator class="increament"/>
+  </id>
+  <property name="aid" column="aid"/>
+  <property name="cid" column="cid"/>
+  <property name="bidAmt" column="bidAmt"/>
+  <property name="createdDt" column="created_dt"/>
+  <property name="createdBy" column="created_by"/>
+  <property name="modifiedDt" column="modified_dt"/>
+  <property name="modifiedBy" column="modified_by"/>
+  
+  </class>
+  
+  <class name="com.zedapp.eauction.model.Borrowers" table="ea_proj_borrowers">
+  <id name="pbid" column="pbid">
+  <generator class="increment"/>
+  </id>
+  <property name="pid" column="pid"/>
+  <property name="borrowerName" column="borrowerName"/>
+  <property name="coborrowerName" column="coborrowerName"/>
+  <property name="borrowerAddress" column="borrowerAddress"/>
+  <property name="coborrowerAddress" column="coborrowerAddress"/>
+  <property name="createdDt" column="createdDt"/>
+  <property name="createdBy" column="createdBy"/>
+  <property name="modifiedDt" column="modifiedDt"/>
+  <property name="modifiedBy" column="modifiedBy"/>
+  
+  
+  </class>
+  
+ <class name="com.zedapp.eauction.model.Broadcast" table="ea_broadcast">
+<id name="bcid" column="bcid">
+<generator class="increment"/>
+</id> 
+<property name="bid" column="bid"/>
+<property name="aid" column="aid"/>
+<property name="message" column="message"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="userType" column="userType"/>
+
+ </class>
+ 
+<class  name="com.zedapp.eauction.model.Customers" table="ea_customers">
+<id name="cid" column="cid">
+<generator class="increment"/>
+</id>
+
+<property name="cname" column="cname"/>
+<property name="addr" column="addr"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+<property name="city" column="city"/>
+<property name="state" column="state"/>
+<property name="pincode" column="pincode"/>
+<property name="country" column="country"/>
+<property name="email" column="email"/>
+<property name="mobile" column="mobile"/>
+<property name="quotation" column="quotation"/>
+<property name="photo" column="photo"/>
+<property name="proof" column="proof"/>
+<property name="dd" column="dd"/>
+<property name="pan" column="PAN"/>
+<property name="ddNo" column="ddNo"/>
+<property name="ddDt" column="ddDt"/>
+<property name="ddBank" column="ddBank"/>
+<property name="proof2" column="proof2"/>
+<property name="photo2" column="photo2"/>
+<property name="custType" column="custtype"/>
+<property name="joinId" column="joinId"/>
+
+
+
+</class>
+
+
+<class  name="com.zedapp.eauction.model.Enquiries" table="ea_enquiries">
+<id name="eid" column="eid">
+<generator class="increment"/>
+</id>
+
+<property name="enquiryDt" column="enquiryDt"/>
+<property name="aid" column="aid"/>
+<property name="createdDt" column="createdDt"/>
+<property name="createdBy" column="createdBy"/>
+<property name="modifiedDt" column="modifiedDt"/>
+<property name="modifiedBy" column="modifiedBy"/>
+<property name="name" column="name"/>
+<property name="mobile" column="mobile"/>
+<property name="remarks" column="remarks"/>
+<property name="enquiryType" column="enquirytype"/>
+<property name="email" column="email"/>
+<property name="responseGiven" column="responsegiven"/>
+<property name="propertyIntrested" column="propertyintrested"/>
+<property name="locationIntrested" column="locationintrested"/>
+
+</class>  
+
+
+<class  name="com.zedapp.eauction.model.Executives" table="ea_executives">
+<id name="exid" column="exid">
+<generator class="increment"/>
+</id>
+
+<property name="exname" column="exname"/>
+<property name="status" column="status"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+<property name="name" column="name"/>
+<property name="mobile" column="mobile"/>
+<property name="email" column="email"/>
+
+</class>  
+
+
+<class  name="com.zedapp.eauction.model.LoginHistory" table="ea_loginhistory">
+<id name="hid" column="hid">
+<generator class="increment"/>
+</id>
+
+<property name="uid" column="uid"/>
+<property name="logindtTime" column="logindtTime"/>
+<property name="createdDt" column="createdDt"/>
+<property name="createdBy" column="createdBy"/>
+<property name="modifiedDt" column="modifiedDt"/>
+<property name="modifiedBy" column="modifiedBy"/>
+<property name="logoutdtTime" column="logoutdtTime"/>
+<property name="ipaddress" column="ipaddress"/>
+
+</class> 
+
+
+
+<class  name="com.zedapp.eauction.model.Payments" table="ea_customer_payments">
+<id name="cpid" column="cpid">
+<generator class="increment"/>
+</id>
+
+<property name="cid" column="cid"/>
+<property name="payDt" column="payDt"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+<property name="payAmt" column="payAmt"/>
+<property name="isEmd" column="isEmd"/>
+<property name="aid" column="aid"/>
+<property name="ddNo" column="ddno"/>
+<property name="ddDt" column="ddDt"/>
+<property name="ddAmt" column="ddAmt"/>
+<property name="bankName" column="bankName"/>
+<property name="infavour" column="infavour"/>
+
+
+</class>  
+
+<class  name="com.zedapp.eauction.model.Perms" table="ea_perms">
+<id name="pid" column="pid">
+<generator class="increment"/>
+</id>
+
+<property name="pname" column="pname"/>
+<property name="pdescr" column="pdescr"/>
+<property name="createdDt" column="createdDt"/>
+<property name="createdBy" column="createdBy"/>
+<property name="modifiedDt" column="modifiedDt"/>
+<property name="modifiedBy" column="modifiedBy"/>
+
+</class> 
+
+
+<class  name="com.zedapp.eauction.model.Projects" table="ea_bank_projects">
+<id name="pid" column="pid">
+<generator class="increment"/>
+</id>
+
+<property name="projName" column="projName"/>
+<property name="minBid" column="minBid"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+<property name="emd" column="EMD"/>
+<property name="minBidDiff" column="minBidDiff"/>
+<property name="bid" column="bid"/>
+<property name="maxBidDiff" column="maxBidDiff"/>
+<property name="propertyType" column="propertyType"/>
+<property name="propertyImage" column="propertyImage"/>
+<property name="projCode" column="projCode"/>
+
+
+</class>  
+
+
+<class  name="com.zedapp.eauction.model.Roles" table="ea_roles">
+<id name="rid" column="rid">
+<generator class="increment"/>
+</id>
+
+<property name="rname" column="rname"/>
+<property name="rdescr" column="rdescr"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+
+</class>  
+
+
+<class  name="com.zedapp.eauction.model.RolesPerms" table="ea_roles_perms">
+<id name="rid" column="rid">
+<generator class="increment"/>
+</id>
+
+<property name="pid" column="pid"/>
+<property name="createdDt" column="createdDt"/>
+<property name="createdBy" column="createdBy"/>
+<property name="modifiedDt" column="modifiedDt"/>
+<property name="modifiedBy" column="modifiedBy"/>
+
+</class> 
+
+
+
+
+<class  name="com.zedapp.eauction.model.Settings" table="ea_settings">
+<id name="sid" column="sid">
+<generator class="increment"/>
+</id>
+
+<property name="key" column="key"/>
+<property name="value" column="value"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+
+</class>  
+
+
+
+
+<class  name="com.zedapp.eauction.model.Sms" table="ea_sms">
+<id name="sid" column="sid">
+<generator class="increment"/>
+</id>
+
+<property name="sendToId" column="sendToId"/>
+<property name="sendToType" column="sendToType"/>
+<property name="sendDt" column="sendDt"/>
+<property name="smsResult" column="smsResult"/>
+<property name="bid" column="bid"/>
+<property name="createdDt" column="createdDt"/>
+<property name="createdBy" column="createdBy"/>
+<property name="modifiedDt" column="modifiedDt"/>
+<property name="modifiedBy" column="modifiedBy"/>
+
+</class>
+
+
+
+<class  name="com.zedapp.eauction.model.SmsSettings" table="ea_sms_settings">
+<id name="sid" column="sid">
+<generator class="increment"/>
+</id>
+
+<property name="sms_url" column="sms_url"/>
+<property name="uname" column="uname"/>
+<property name="pwd" column="pwd"/>
+<property name="status" column="status"/>
+<property name="sender_id" column="sender_id"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+
+</class>  
+
+<class  name="com.zedapp.eauction.model.SmsTemplates" table="ea_sms_templates">
+<id name="tid" column="tid">
+<generator class="increment"/>
+</id>
+
+<property name="template" column="template"/>
+<property name="type" column="type"/>
+<property name="status" column="status"/>
+<property name="createdDt" column="createdDt"/>
+<property name="createdBy" column="createdBy"/>
+<property name="modifiedDt" column="modifiedDt"/>
+<property name="modifiedBy" column="modifiedBy"/>
+
+</class>
+
+
+<class  name="com.zedapp.eauction.model.Users" table="ea_users">
+<id name="uid" column="uid">
+<generator class="increment"/>
+</id>
+
+<property name="uname" column="uname"/>
+<property name="typeId" column="typeId"/>
+<property name="pwd" column="pwd"/>
+<property name="utype" column="utype"/>
+<property name="loginStartDate" column="loginStartDate"/>
+<property name="status" column="status"/>
+<property name="sender_id" column="sender_id"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+<property name="uuid" column="uuid"/>
+<property name="lastLoginDt" column="lastLoginDt"/>
+<property name="isLogin" column="isLogin"/>
+<property name="otp" column="otp"/>
+<property name="mobile" column="mobile"/>
+<property name="aid" column="aid"/>
+
+</class>  
+
+
+<class  name="com.zedapp.eauction.model.UsersPerms" table="ea_users_perms">
+<id name="uid" column="uid">
+<generator class="increment"/>
+</id>
+
+<property name="pid" column="pid"/>
+<property name="createdDt" column="createdDt"/>
+<property name="createdBy" column="createdBy"/>
+<property name="modifiedDt" column="modifiedDt"/>
+<property name="modifiedBy" column="modifiedBy"/>
+
+</class>
+
+
+
+<class  name="com.zedapp.eauction.model.UsersRoles" table="ea_users_roles">
+<id name="uid" column="uid">
+<generator class="increment"/>
+</id>
+
+<property name="rid" column="rid"/>
+<property name="createdDt" column="created_dt"/>
+<property name="createdBy" column="created_by"/>
+<property name="modifiedDt" column="modified_dt"/>
+<property name="modifiedBy" column="modified_by"/>
+
+</class>  
+
+
+
+
+
+
+
+     
+</hibernate-mapping>
