@@ -3721,3 +3721,74 @@ java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingst
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-07-25 10:37:51.174
+!MESSAGE HTTP Server Unknown HTTP Response Code (308):http://dl.bintray.com/testng-team/testng-p2-release/content.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 308.
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:276)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2024-07-25 10:37:51.176
+!MESSAGE HttpComponents connection error response code 308.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-07-25 10:38:11.219
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-25 10:46:29.803
+!MESSAGE An exception occurred during push on URI https://github.com/bezkoder/spring-boot-data-jpa-mysql: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:147)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:545)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:434)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1335)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:137)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-07-25 10:46:29.809
+!MESSAGE Can't connect to any repository: https://github.com/bezkoder/spring-boot-data-jpa-mysql (https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/')
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-25 10:46:49.037
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-25 10:46:49.050
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-25 10:55:51.805
+!MESSAGE An exception occurred during push on URI https://github.com/bezkoder/spring-boot-data-jpa-mysql: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:545)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:434)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1335)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:211)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-25 10:59:24.190
+!MESSAGE An exception occurred during push on URI https://github.com/bezkoder/spring-boot-data-jpa-mysql: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:147)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:545)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:434)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1335)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:137)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-07-25 10:59:24.193
+!MESSAGE Can't connect to any repository: https://github.com/bezkoder/spring-boot-data-jpa-mysql (https://github.com/bezkoder/spring-boot-data-jpa-mysql: git-receive-pack not permitted on 'https://github.com/bezkoder/spring-boot-data-jpa-mysql/')
